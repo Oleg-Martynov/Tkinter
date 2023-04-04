@@ -1,9 +1,11 @@
 from tkinter import Tk
-from tkinter.ttk import Entry, Button, Label
+from tkinter.ttk import Button, Label
 
 window = Tk()
 window.title("Главное окно")
 window.geometry("300x200")
+
+# TODO: Показать, почему классом создавать форму лучше
 
 value = 0
 
