@@ -35,12 +35,12 @@ def button_click():
         y2_i = 0
     else:
         y2_i = int(y2)
-    label_distanse.config(text=f'Расстояние = {((x2_i - x1_i) ** 2 + (y2_i - y1_i) ** 2) ** 0.5}',
+    label_distance.config(text=f'Расстояние = {((x2_i - x1_i) ** 2 + (y2_i - y1_i) ** 2) ** 0.5}',
                           font=("Segoe UI", 14))
 
 
 window = Tk()
-window.title("Калькулятор растояний")
+window.title("Калькулятор расстояний")
 window.geometry("300x200")
 
 x1_entry = Entry(width=10)
@@ -59,12 +59,12 @@ label_x1 = Label(text='X1', font=("Segoe UI", 14))
 label_y1 = Label(text='Y1', font=("Segoe UI", 14))
 label_x2 = Label(text='X2', font=("Segoe UI", 14))
 label_y2 = Label(text='Y2', font=("Segoe UI", 14))
-label_distanse = Label(text=f'Расстояние = _', font=("Segoe UI", 14))
+label_distance = Label(text=f'Расстояние = _', font=("Segoe UI", 14))
 
 label_x1.grid(row=0, column=0, pady=[30, 0])
 label_y1.grid(row=0, column=1, pady=[30, 0])
 label_y2.grid(row=0, column=3, pady=[30, 0])
 label_x2.grid(row=0, column=2, padx=[20, 0], pady=[30, 0])
-label_distanse.grid(row=3, column=0, columnspan=4)
+label_distance.grid(row=3, column=0, columnspan=4)
 
 window.mainloop()

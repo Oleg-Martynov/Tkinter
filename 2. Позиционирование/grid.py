@@ -1,5 +1,5 @@
 from tkinter import Tk
-from tkinter.ttk import Entry, Button
+from tkinter.ttk import Button
 
 window = Tk()
 window.title("Главное окно")
