@@ -9,6 +9,7 @@ window.geometry("300x200")
 v1 = IntVar()
 v2 = IntVar()
 
+# Дополнительная возможность изменять метку checkbutton-а
 on = 'Включено'
 off = 'Отключено'
 switcher = StringVar(value=on)
